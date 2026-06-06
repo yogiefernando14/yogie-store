@@ -186,22 +186,24 @@ document.getElementById("cartItems");
 
 if(cartItems){
 
-let cart =
+const cart =
 JSON.parse(localStorage.getItem("cart")) || [];
 
-let total = 0;
+console.log("CART PAGE LOAD");
+console.log(cart);
+
+let grandTotalValue = 0;
+
+cartItems.innerHTML = "";
 
 cart.forEach(item=>{
 
-const price =
-Number(
-item.price
-.replace("IDR","")
-.replace(/\./g,"")
-.trim()
+const cleanPrice =
+parseInt(
+item.price.replace(/[^\d]/g,"")
 );
 
-total += price * item.qty;
+grandTotalValue += cleanPrice * item.qty;
 
 cartItems.innerHTML += `
 
@@ -228,7 +230,7 @@ if(grandTotal){
 
 grandTotal.innerText =
 "IDR " +
-total.toLocaleString("id-ID");
+grandTotalValue.toLocaleString("id-ID");
 
 }
 
