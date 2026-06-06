@@ -81,3 +81,25 @@ let total = localStorage.getItem("cartTotal") || 0;
 if(cartCount){
 cartCount.innerText = total;
 }
+
+let qty = 1;
+
+const qtyValue = document.getElementById("qtyValue");
+const plusBtn = document.getElementById("plusQty");
+const minusBtn = document.getElementById("minusQty");
+
+if (plusBtn) {
+  plusBtn.addEventListener("click", () => {
+    qty++;
+    qtyValue.textContent = qty;
+  });
+}
+
+if (minusBtn) {
+  minusBtn.addEventListener("click", () => {
+    if (qty > 1) {
+      qty--;
+      qtyValue.textContent = qty;
+    }
+  });
+}
