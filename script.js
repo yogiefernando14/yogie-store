@@ -100,6 +100,8 @@ JSON.stringify(cart)
 
 );
 
+alert(JSON.stringify(cart));
+  
 let totalQty = 0;
 
 cart.forEach(item => {
