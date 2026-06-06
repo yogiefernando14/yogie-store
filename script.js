@@ -181,6 +181,8 @@ badge.innerText = total;
 
 });
 
+alert("SCRIPT CART JALAN");
+
 const cartItems =
 document.getElementById("cartItems");
 
