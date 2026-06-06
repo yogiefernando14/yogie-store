@@ -385,13 +385,13 @@ gap:16px;
 }
 
 .back-btn{
-
+background:none;
+border:none;
 color:white;
-
-text-decoration:none;
-
-font-size:1.6rem;
-
+font-size:22px;
+cursor:pointer;
+padding:0;
+margin:0;
 }
 
 .nav-icons{
