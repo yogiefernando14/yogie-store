@@ -455,3 +455,55 @@ justify-content:center;
   min-width:20px;
   text-align:center;
 }
+
+.cart-page{
+
+width:min(900px,92%);
+
+margin:auto;
+
+padding:120px 0;
+
+}
+
+.cart-page h1{
+
+margin-bottom:40px;
+
+letter-spacing:3px;
+
+}
+
+.cart-card{
+
+padding:25px 0;
+
+border-bottom:1px solid #222;
+
+}
+
+.cart-card h3{
+
+margin-bottom:10px;
+
+}
+
+.cart-card p{
+
+color:#aaa;
+
+margin:5px 0;
+
+}
+
+.cart-total{
+
+margin-top:40px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
