@@ -100,12 +100,17 @@ JSON.stringify(cart)
 
 );
 
+let totalQty = 0;
+
+cart.forEach(item => {
+
+totalQty += item.qty;
+
+});
+
 localStorage.setItem(
-
 "cartTotal",
-
-cart.length
-
+totalQty
 );
 
 const cartBadge =
