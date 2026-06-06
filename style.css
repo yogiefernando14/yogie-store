@@ -384,3 +384,9 @@ border:none;
 font-weight:700;
 cursor:pointer;
 }
+
+.product{
+text-decoration:none;
+color:white;
+display:block;
+}
