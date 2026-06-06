@@ -3,119 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>YOGIEZ PRODUCT</title>
-
+<title>YOGIEZ TEE</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header class="product-nav">
-
-<a href="index.html" class="back-btn">←</a>
-
-<div class="product-logo">
+<header class="navbar">
+<div class="logo">
 YOGIEZ
 </div>
-
-<div id="cartBtn">
-🛒
-</div>
-
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
 </header>
-
-<section class="product-detail">
-
-<div class="product-gallery">
-
-<img src="images/p1.jpg">
-
-<img src="images/p2.jpg">
-
+<div class="sidebar" id="sidebar">
+<div class="close-btn" id="closeBtn">
+✕
 </div>
 
+SHOP
+LOOKBOOK
+CART
+
+</div>
+<section class="product-page">
+<div class="product-gallery">
+<img src="images/p1.jpg" alt="">
+<img src="images/p2.jpg" alt="">
+</div>
 <div class="product-info">
-
 <h1>YOGIEZ TEE</h1>
-
-<div class="price">
+<div class="product-price">
 IDR 249.000
 </div>
-
-<div class="size-title">
+<div class="size-label">
 SIZE
 </div>
+<div class="size-list">
 
-<div class="sizes">
-
-<button>S</button>
-<button>M</button>
-<button>L</button>
-<button>XL</button>
+S
+M
+L
+XL
 
 </div>
-
-<button class="add-cart">
+<button class="add-cart-btn">
 ADD TO CART
 </button>
-
-<div class="desc">
-
+<div class="product-description">
 <h3>DESCRIPTION</h3>
-
 <p>
-Premium cotton 24s.
-Oversized fit.
-YOGIEZ 2026 Collection.
+Premium cotton 24s.<br>
+Oversized fit.<br>
+YOGIEZ Collection 2026.
 </p>
-
 </div>
-
 </div>
-
 </section>
-
-<div class="cart-sidebar" id="cartSidebar">
-
-<div class="cart-header">
-
-<h2>CART</h2>
-
-<span id="closeCart">✕</span>
-
-</div>
-
-<div class="cart-item">
-
-<img src="images/p1.jpg">
-
-<div>
-
-<h4>YOGIEZ TEE</h4>
-
-<p>IDR 249.000</p>
-
-</div>
-
-</div>
-
-<div class="cart-footer">
-
-<h3>TOTAL</h3>
-
-<h3>IDR 249.000</h3>
-
-<button class="checkout-btn">
-
-CHECKOUT
-
-</button>
-
-</div>
-
-</div>
-
 <script src="script.js"></script>
-
 </body>
 </html>
