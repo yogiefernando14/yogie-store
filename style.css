@@ -229,3 +229,18 @@ color:#aaa;
 margin-top:10px;
 
 }
+@media(max-width:768px){
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+.new-drop{
+
+padding:80px 25px;
+
+}
+
+}
