@@ -354,3 +354,16 @@ color:black;
 border-color:white;
 
 }
+.nav-actions{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.cart-icon{
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+}
