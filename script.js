@@ -33,3 +33,43 @@ cartSidebar.classList.remove("active");
 });
 
 }
+
+const sizeButtons = document.querySelectorAll(".size-btn");
+
+const addCartBtn = document.getElementById("addCartBtn");
+
+let selectedSize = "";
+
+sizeButtons.forEach(btn => {
+
+btn.addEventListener("click", () => {
+
+sizeButtons.forEach(b => b.classList.remove("active"));
+
+btn.classList.add("active");
+
+selectedSize = btn.innerText;
+
+});
+
+});
+
+if(addCartBtn){
+
+addCartBtn.addEventListener("click", () => {
+
+if(selectedSize === ""){
+
+alert("Pilih size terlebih dahulu");
+
+return;
+
+}
+
+localStorage.setItem("size", selectedSize);
+
+window.location.href = "cart.html";
+
+});
+
+}
