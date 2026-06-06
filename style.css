@@ -345,3 +345,12 @@ top:120px;
 }
 
 }
+.size-btn.active{
+
+background:white;
+
+color:black;
+
+border-color:white;
+
+}
