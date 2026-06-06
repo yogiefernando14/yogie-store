@@ -119,7 +119,7 @@ document.getElementById("cartCount");
 
 if(cartBadge){
 
-cartBadge.innerText = cart.length;
+cartBadge.innerText = totalQty;
 
 }
 
