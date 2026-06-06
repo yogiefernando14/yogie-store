@@ -168,3 +168,56 @@ badge.innerText = total;
 }
 
 });
+
+const cartItems =
+document.getElementById("cartItems");
+
+if(cartItems){
+
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
+
+let total = 0;
+
+cart.forEach(item=>{
+
+const price =
+Number(
+item.price
+.replace("IDR","")
+.replace(/\./g,"")
+.trim()
+);
+
+total += price * item.qty;
+
+cartItems.innerHTML += `
+
+<div class="cart-card">
+
+<h3>${item.name}</h3>
+
+<p>Size : ${item.size}</p>
+
+<p>Qty : ${item.qty}</p>
+
+<p>${item.price}</p>
+
+</div>
+
+`;
+
+});
+
+const grandTotal =
+document.getElementById("grandTotal");
+
+if(grandTotal){
+
+grandTotal.innerText =
+"IDR " +
+total.toLocaleString("id-ID");
+
+}
+
+}
