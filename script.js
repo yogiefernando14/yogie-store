@@ -86,6 +86,10 @@ qty: qty
 
 };
 
+console.log("PRODUCT =", product);
+
+alert("MASUK ADD CART");
+
 let cart =
 
 JSON.parse(localStorage.getItem("cart")) || [];
@@ -100,6 +104,7 @@ JSON.stringify(cart)
 
 );
 
+console.log("CART =", cart);
 alert(JSON.stringify(cart));
   
 let totalQty = 0;
