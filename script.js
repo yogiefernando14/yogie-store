@@ -73,3 +73,11 @@ window.location.href = "cart.html";
 });
 
 }
+
+const cartCount = document.getElementById("cartCount");
+
+let total = localStorage.getItem("cartTotal") || 0;
+
+if(cartCount){
+cartCount.innerText = total;
+}
