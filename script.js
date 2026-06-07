@@ -231,6 +231,10 @@ cartItems.innerHTML += `
 
 <div class="cart-card">
 
+<img src="${item.image}" class="cart-image">
+
+<div class="cart-info">
+
 <h3>${item.name}</h3>
 
 <p>Size : ${item.size}</p>
@@ -244,6 +248,8 @@ cartItems.innerHTML += `
 REMOVE
 
 </button>
+
+</div>
 
 </div>
 
