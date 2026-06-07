@@ -215,6 +215,28 @@ const cart =
 
 JSON.parse(localStorage.getItem("cart")) || [];
 
+if(cart.length === 0){
+
+cartItems.innerHTML = `
+
+<div class="empty-cart">
+
+<h2>YOUR CART IS EMPTY</h2>
+
+<a href="shop.html" class="hero-btn">
+
+CONTINUE SHOPPING
+
+</a>
+
+</div>
+
+`;
+
+}
+
+else{
+  
 let grandTotalValue = 0;
 
 cartItems.innerHTML = "";
@@ -257,6 +279,8 @@ REMOVE
 
 });
 
+
+  
 const grandTotal =
 
 document.getElementById("grandTotal");
@@ -271,6 +295,8 @@ grandTotalValue.toLocaleString("id-ID");
 
 }
 
+}
+  
 }
 
 function removeItem(index){
