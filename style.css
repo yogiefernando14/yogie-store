@@ -523,3 +523,21 @@ border:1px solid #333;
 color:white;
 cursor:pointer;
 }
+
+.hero-btn,
+.add-cart-btn,
+.remove-btn,
+.clear-cart-btn{
+transition:.3s ease;
+}
+
+.hero-btn:hover,
+.clear-cart-btn:hover{
+background:white;
+color:black;
+}
+
+.remove-btn:hover{
+border-color:white;
+color:white;
+}
