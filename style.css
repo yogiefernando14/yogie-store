@@ -637,3 +637,15 @@ display:block;
 flex:1;
 
 }
+
+.empty-cart{
+text-align:center;
+padding:80px 0;
+}
+
+.empty-cart h2{
+font-size:1.2rem;
+letter-spacing:3px;
+margin-bottom:30px;
+color:#aaa;
+}
