@@ -195,6 +195,8 @@ badge.innerText = total;
 
 }
 
+}
+  
 });
 
 const cartItems =
