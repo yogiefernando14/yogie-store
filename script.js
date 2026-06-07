@@ -116,7 +116,6 @@ JSON.stringify(cart)
 );
 
 console.log("CART =", cart);
-alert(JSON.stringify(cart));
   
 let totalQty = 0;
 
@@ -253,6 +252,44 @@ grandTotalValue.toLocaleString("id-ID");
 }
 
 }
+
+function removeItem(index){
+
+let cart =
+
+JSON.parse(localStorage.getItem("cart")) || [];
+
+cart.splice(index,1);
+
+localStorage.setItem(
+
+"cart",
+
+JSON.stringify(cart)
+
+);
+
+let totalQty = 0;
+
+cart.forEach(item=>{
+
+totalQty += item.qty;
+
+});
+
+localStorage.setItem(
+
+"cartTotal",
+
+totalQty
+
+);
+
+location.reload();
+
+}
+
+function clearCart(){
 
 localStorage.removeItem("cart");
 
