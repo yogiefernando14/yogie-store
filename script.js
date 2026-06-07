@@ -121,7 +121,7 @@ alert(JSON.stringify(cart));
   
 let totalQty = 0;
 
-cart.forEach(item => {
+cart.forEach(item,index) => {
 
 totalQty += item.qty;
 
