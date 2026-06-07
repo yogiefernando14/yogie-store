@@ -574,3 +574,12 @@ color:white;
 border-color:white;
 
 }
+
+.clear-cart-btn,
+.hero-btn{
+width:100%;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
