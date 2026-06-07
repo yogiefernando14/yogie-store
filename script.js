@@ -194,17 +194,30 @@ badge.innerText = total;
 });
 
 const cartItems =
+
 document.getElementById("cartItems");
 
 if(cartItems){
 
 const cart =
+
 JSON.parse(localStorage.getItem("cart")) || [];
 
-console.log("CART PAGE LOAD");
-console.log(cart);
-
 let grandTotalValue = 0;
+
+cartItems.innerHTML = "";
+
+cart.forEach((item,index)=>{
+
+const cleanPrice =
+
+parseInt(
+
+item.price.replace(/[^\d]/g,"")
+
+);
+
+grandTotalValue += cleanPrice * item.qty;
 
 cartItems.innerHTML += `
 
@@ -219,7 +232,9 @@ cartItems.innerHTML += `
 <p>${item.price}</p>
 
 <button onclick="removeItem(${index})" class="remove-btn">
+
 REMOVE
+
 </button>
 
 </div>
@@ -229,19 +244,20 @@ REMOVE
 });
 
 const grandTotal =
+
 document.getElementById("grandTotal");
 
 if(grandTotal){
 
 grandTotal.innerText =
+
 "IDR " +
+
 grandTotalValue.toLocaleString("id-ID");
 
 }
 
 }
-
-function removeItem(index){
 
 let cart =
 JSON.parse(localStorage.getItem("cart")) || [];
