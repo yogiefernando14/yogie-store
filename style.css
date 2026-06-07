@@ -497,15 +497,10 @@ margin:5px 0;
 }
 
 .cart-total{
-
-margin-top:40px;
-
-display:flex;
-
-flex-direction:column;
-
-gap:20px;
-
+position:sticky;
+bottom:0;
+background:#000;
+padding-top:20px;
 }
 
 .remove-btn{
