@@ -206,17 +206,6 @@ console.log(cart);
 
 let grandTotalValue = 0;
 
-cartItems.innerHTML = "";
-
-cart.forEach(item=>{
-
-const cleanPrice =
-parseInt(
-item.price.replace(/[^\d]/g,"")
-);
-
-grandTotalValue += cleanPrice * item.qty;
-
 cartItems.innerHTML += `
 
 <div class="cart-card">
@@ -228,6 +217,10 @@ cartItems.innerHTML += `
 <p>Qty : ${item.qty}</p>
 
 <p>${item.price}</p>
+
+<button onclick="removeItem(${index})" class="remove-btn">
+REMOVE
+</button>
 
 </div>
 
