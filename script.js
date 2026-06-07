@@ -180,10 +180,16 @@ window.addEventListener("load",()=>{
 const badge =
 document.getElementById("cartCount");
 
+if(badge){
+  
 const total =
 localStorage.getItem("cartTotal") || 0;
 
-if(badge){
+if(total == 0){
+
+badge.style.display = "none";
+
+}else{
 
 badge.innerText = total;
 
