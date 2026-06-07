@@ -100,7 +100,6 @@ qty: qty
 
 console.log("PRODUCT =", product);
 
-alert("MASUK ADD CART");
 
 let cart =
 
@@ -121,7 +120,7 @@ alert(JSON.stringify(cart));
   
 let totalQty = 0;
 
-cart.forEach(item,index) => {
+cart.forEach(item => {
 
 totalQty += item.qty;
 
@@ -211,11 +210,7 @@ cart.forEach((item,index)=>{
 
 const cleanPrice =
 
-parseInt(
-
-item.price.replace(/[^\d]/g,"")
-
-);
+parseInt(item.price.replace(/[^\d]/g,""));
 
 grandTotalValue += cleanPrice * item.qty;
 
@@ -258,33 +253,6 @@ grandTotalValue.toLocaleString("id-ID");
 }
 
 }
-
-let cart =
-JSON.parse(localStorage.getItem("cart")) || [];
-
-cart.splice(index,1);
-
-localStorage.setItem(
-"cart",
-JSON.stringify(cart)
-);
-
-let totalQty = 0;
-
-cart.forEach(item=>{
-totalQty += item.qty;
-});
-
-localStorage.setItem(
-"cartTotal",
-totalQty
-);
-
-location.reload();
-
-}
-
-function clearCart(){
 
 localStorage.removeItem("cart");
 
