@@ -112,12 +112,14 @@ letter-spacing:4px;
 
 .hero-btn{
 margin-top:25px;
-padding:14px 40px;
+padding:12px 28px;
 border:1px solid white;
 color:white;
 text-decoration:none;
-font-size:.8rem;
+font-size:.75rem;
 letter-spacing:2px;
+width:auto;
+display:inline-block;
 }
 
 .shop-section{
