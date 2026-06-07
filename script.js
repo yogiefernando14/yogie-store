@@ -86,6 +86,10 @@ const productPrice =
 
 document.querySelector(".product-price").innerText;
 
+const productImage =
+
+document.querySelector(".product-gallery img").src;
+
 const product = {
 
 name: productName,
@@ -94,7 +98,9 @@ price: productPrice,
 
 size: selectedSize,
 
-qty: qty
+qty: qty,
+
+image: productImage
 
 };
 
