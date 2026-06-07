@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
 
+<script>
+
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
+
+let message = "Halo YOGIEZ%0A%0A";
+
+message += "ORDER:%0A%0A";
+
+let total = 0;
+
+cart.forEach(item=>{
+
+const price =
+parseInt(item.price.replace(/[^\d]/g,""));
+
+total += price * item.qty;
+
+message +=
+`- ${item.name}%0A` +
+`Size : ${item.size}%0A` +
+`Qty : ${item.qty}%0A%0A`;
+
+});
+
+message +=
+`TOTAL : IDR ${total.toLocaleString("id-ID")}`;
+
+window.location.href =
+"https://wa.me/6283872880780?text=" + message;
+
+</script>
+
+</head>
+<body>
+</body>
+</html>
