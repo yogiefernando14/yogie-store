@@ -267,3 +267,13 @@ totalQty
 location.reload();
 
 }
+
+function clearCart(){
+
+localStorage.removeItem("cart");
+
+localStorage.removeItem("cartTotal");
+
+location.reload();
+
+}
